@@ -75,6 +75,14 @@ git diff 比较工作目录和Index中的代码。
 git diff --cached 比较index和本地仓库中的代码。
 
 git checkout
+git checkout –b 新分支名，创建一个新分支，并切换到该分支上
+git checkout local_branch 切换到某个已经建立的本地分支local_branch
+（使用cat .git/HEAD后，显示refs:refs/heads/ local_branch） 
+git checkout remote_branch 切换到服务器上的某个分支remote_branch
+（远程分支remote_branch可以通过 git branch –r 列出）
+git checkout commit_id 切换到某个commit id
+（使用cat .git/HEAD后，显示commit_id）
+git checkout tag 切换到某个tag 
 
 git branch
 
